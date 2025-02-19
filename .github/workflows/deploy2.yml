@@ -29,4 +29,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Vite-Github-Pages-Deployer
         uses: xRealNeon/VuePagesAction@1.0.1
-        id: deploy_to_pages
+        with:
+          username: 'coderjs54'
+          reponame: 'vue2-org-chart'
+          token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
